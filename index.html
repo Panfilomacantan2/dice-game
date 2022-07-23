@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/dice_header.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="player-status">
+        <div class="player1">
+          <h3>Player 1</h3>
+          <p class="player1-name"><span id="player1-name">Ai</span></p>
+          <p class="player1-score">Score: <span id="player1">0</span></p>
+        </div>
+        <div class="player2">
+          <h3>Player 2</h3>
+          <p class="player2-name"><span id="player2-name">Ai</span></p>
+          <p class="player2-score">Score: <span id="player2">0</span></p>
+      </div>
+    </header>
+    <h2>Let's Play!</h2>
+    <p>Click the button below to Roll the Dice</p>
+    <div class="scene">
+      <div class="cube">
+        <div class="cube__face cube__face--1"></div>
+        <div class="cube__face cube__face--2"></div>
+        <div class="cube__face cube__face--3"></div>
+        <div class="cube__face cube__face--4"></div>
+        <div class="cube__face cube__face--5"></div>
+        <div class="cube__face cube__face--6"></div>
+      </div>
+
+      <button class="roll-btn">Roll the Dice</button>
+    </div>
+    <footer><p>All Rights Reserved 2022. -Macantan</p></footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

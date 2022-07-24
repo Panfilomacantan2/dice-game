@@ -11,7 +11,12 @@ let isPlayer2Turn = false;
 swal("Enter player 1 name:", {
   content: "input",
 }).then((value) => {
-  if (value.trim().length === 0) {
+  if (
+    value.trim().length === 0 ||
+    value.trim() === null ||
+    value.trim() === "" ||
+    value.trim() === false
+  ) {
     player1.name = "Ai";
     document.querySelector("#player1-name").innerText = player1.name;
   } else {
@@ -22,7 +27,12 @@ swal("Enter player 1 name:", {
   swal("Enter player 2 name:", {
     content: "input",
   }).then((value) => {
-    if (value.trim().length === 0) {
+    if (
+      value.trim().length === 0 ||
+      value.trim() === null ||
+      value.trim() === "" ||
+      value.trim() === false
+    ) {
       player2.name = "Ai";
       document.querySelector("#player2-name").innerText = player2.name;
     } else {
@@ -100,6 +110,7 @@ function dicing() {
         resetGame();
         isPlayer2Turn = false;
       }
+      document.querySelector("#turn").innerText = "Player 1";
 
       isPlayer2Turn = false;
     } else {
@@ -110,8 +121,10 @@ function dicing() {
         isPlayer2Turn = false;
 
         resetGame();
+        document.querySelector("#turn").innerText = "Player 1";
       } else {
         isPlayer2Turn = true;
+        document.querySelector("#turn").innerText = "Player 2";
       }
     }
   }

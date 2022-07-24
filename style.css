@@ -173,7 +173,7 @@ header .player-status {
   background: #0096c7;
   color: white;
   text-align: center;
-  padding:  20px;
+  padding: 20px;
 }
 
 header .player-status .player1,
@@ -195,4 +195,16 @@ span {
   color: #0d1f2d;
   font-weight: 600;
   font-size: 1rem;
+}
+
+.turn {
+  color: #0096c7;
+  font-weight: 600;
+  font-size: 1rem;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
